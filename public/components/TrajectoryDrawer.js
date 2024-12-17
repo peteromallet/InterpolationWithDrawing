@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useState, useRef, useEffect, useReducer, useCallback } from 'react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Slider } from '@/components/ui/slider';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Eraser, ImagePlus, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Loader2 } from "lucide-react";
+import React, { useState, useRef, useEffect, useReducer, useCallback } from 'https://cdn.skypack.dev/react@19.0.0';
+import { Card } from './ui/card.js';
+import { Button } from './ui/button.js';
+import { Slider } from './ui/slider.js';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select.js';
+import { Eraser, ImagePlus, X, Loader2 } from 'https://cdn.skypack.dev/lucide-react@0.468.0';
+import { cn } from '../lib/utils.js';
+import Modal from './ui/modal.js';
 
 // Canvas dimensions
 const CANVAS_DIMENSIONS = {
